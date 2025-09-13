@@ -24,7 +24,7 @@ FetchContent_MakeAvailable(Catch2)
 include_directories(src)
 
 add_executable(quiz-3 main.cpp)
-add_executable(tests tests.cpp)
+add_executable(tests tests.cpp Node.h)
 
 target_link_libraries(tests PRIVATE Catch2::Catch2WithMain) #link catch to test.cpp file
 # the name here must match that of your testing executable (the one that has test.cpp)

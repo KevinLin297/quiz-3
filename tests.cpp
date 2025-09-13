@@ -1,12 +1,10 @@
 #include <catch2/catch_test_macros.hpp>
 #include <iostream>
-
-#include "main.h"
+#include "Node.h"
 
 using namespace std;
 
 TEST_CASE("Function: IQR 1") {
-
 	vector<int> v = {1,2,3};
 	Node* head = nullptr;
 	for(int i: v)
@@ -20,7 +18,6 @@ TEST_CASE("Function: IQR 1") {
         head = head->next;
         delete temp;
     }
-
 }
 //
 //TEST_CASE("Function: IQR 2", "[given]") {
