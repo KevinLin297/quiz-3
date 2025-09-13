@@ -3,6 +3,8 @@ project(quiz-3)
 
 set(CMAKE_CXX_STANDARD 14)
 
+
+
 #compile flags to match Gradescope test environment
 set(GCC_COVERAGE_COMPILE_FLAGS "-Wall -Werror")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
@@ -20,13 +22,9 @@ FetchContent_MakeAvailable(Catch2)
 
 include_directories(src)
 
-add_executable(Tests
-        src/main.cpp
-        tests.cpp
+add_executable(quiz-3 main.cpp tests.cpp)
 
-)
-
-target_link_libraries(Tests PRIVATE Catch2::Catch2WithMain) #link catch to test.cpp file
+target_link_libraries(quiz-3 PRIVATE Catch2::Catch2WithMain) #link catch to test.cpp file
 # the name here must match that of your testing executable (the one that has test.cpp)
 
 # comment everything below out if you are using CLion
