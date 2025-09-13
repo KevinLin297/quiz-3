@@ -25,13 +25,13 @@ TEST_CASE("Function: IQR 1") {
 }
 
 TEST_CASE("Function: IQR 2") {
-	// testing even list num
-	vector<int> v = {2, 3, 4, 5};
+	// testing odd list num
+	vector<int> v = {2, 3, 4, 5,6};
 	Node* head = nullptr;
 	for(int i: v)
 		head = insertEnd(head, i);
 
-	REQUIRE(interQuartile(head) == 2);
+	REQUIRE(interQuartile(head) == 3);
 
     while (head != nullptr)
     {
