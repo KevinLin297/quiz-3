@@ -128,5 +128,5 @@ float interQuartile(Node* head)
 }
 
 int main() {
-    return 45;
+    return 30;
 }
