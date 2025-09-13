@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include "main.h"
 
 using namespace std;
 
