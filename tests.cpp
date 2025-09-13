@@ -6,20 +6,21 @@
 using namespace std;
 
 TEST_CASE("Function: IQR 1") {
-	REQUIRE(1==1);
-	// vector<int> v = {1,2,3};
-	// Node* head = nullptr;
-	// for(int i: v)
-	// 	head = insertEnd(head, i);
- //
-	// REQUIRE(interQuartile(head) == 2.00);
- //
- //    while (head != nullptr)
- //    {
- //        Node* temp = head;
- //        head = head->next;
- //        delete temp;
- //    }
+
+	vector<int> v = {1,2,3};
+	Node* head = nullptr;
+	for(int i: v)
+		head = insertEnd(head, i);
+
+	REQUIRE(interQuartile(head) == 2.00);
+
+    while (head != nullptr)
+    {
+        Node* temp = head;
+        head = head->next;
+        delete temp;
+    }
+
 }
 //
 //TEST_CASE("Function: IQR 2", "[given]") {
